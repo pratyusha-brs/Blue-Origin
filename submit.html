@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart Added</title>
+    </head>
+<body id="home" class="scrollspy">
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+        <!-- Dropdown Structure -->
+        <nav>
+            <div>
+            <a href="index.html" class="brand-logo">
+                <img src="assets/img/logo.png" class="responsive-img" />
+            </a>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" data-activates="mobile-nav" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="cart.html">
+                                <i class="large material-icons">shopping_cart</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="large material-icons">person</i>
+                            </a>
+                        </li>
+  
+                        <li>
+                            <a href="#">
+                                <i class="large material-icons">search</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <!-- Dropdown Trigger -->
+                        <li>
+                            <a href="#">Apparel</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">New Shepard</a>
+                        </li>
+                        <li>
+                            <a href="#">New Glenn</a>
+                        </li>
+                        <li>
+                            <a href="list.html">List</a>
+                        </li>
+                        <li>
+                            <a href="details.html">Details</a>
+                        </li>
+                    </ul>
+                </div>
+  
+            </div>
+        </nav>
+    </div>
+    </div>
+    <!-- Section: Navigation -->
+    <!-- Mobile Navigation -->
+    <ul class="side-nav" id="mobile-nav">
+        <li>
+          <a href="#accessories">Accessories <i class="material-icons">chevron_right</i></a>
+        </li>
+        <li>
+          <a href="#">New Shepard <i class="material-icons">chevron_right</i></a>
+        </li>
+        <li>
+          <a href="cart.html">Cart <i class="material-icons">chevron_right</i></a>
+        </li>
+        <li>
+          <a href="list.html">List <i class="material-icons">chevron_right</i></a>
+        </li>
+        <li>
+          <a href="details.html">Details <i class="material-icons">chevron_right</i></a>
+        </li>
+      </ul>
+       <!-- Content -->
+    <div class="container">
+        <h4 class="blue-text">Item Added to Cart</h4>
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/img/shopimages/hoodie_b2047829-315a-4c2d-bfab-b678ee9c4b98.png" alt="Product Image">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title blue-text">white_feathered logo hoodie</h3>
+                <h6 class="blue-text">Price: $99.99</h6>
+            </div>
+            <div class="card-action">
+                <a class="btn blue" href="list.html">Continue Shopping</a>
+                <a class="btn blue" href="cart.html">View Cart</a>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <footer class="section newGrey darken-2 white-text">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4 left-align quickLinks">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li>
+                        <a href="">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Refunds & Exchanges
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Do not sell my personal information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Accessibility
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 right-align">
+                <img class="materialboxed responsive-img" src="assets/img/feather-footer.png" alt="">
+            </div>
+            <div class="col s12 m4">
+                <p>
+                    For questions or concerns please contact customer service shop@blueorigin.com. Please allow up
+                    to 2 business days for response.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="center borderTop">
+        <p>
+            © 2023, Blue Origin Shop Powered by BRS Studio
+        </p>
+    </div>
+</footer>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".dropdown-trigger").dropdown();
+            });
+            $(document).ready(function() {
+          $('.minus').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+          });
+          $('.plus').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+          });
+                // Init Scrollspy
+          $('.scrollspy').scrollSpy();
+        
+        //inti side nav
+        $('.button-collapse').sideNav();
+        });
+        </script>
+    </body>
+    </html>

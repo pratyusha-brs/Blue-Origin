@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Details</title>
+    </head>
+<body id="home" class="scrollspy">
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+        <!-- Dropdown Structure -->
+        <nav>
+            <div>
+            <a href="index.html" class="brand-logo">
+                <img src="assets/img/logo.png" class="responsive-img" />
+            </a>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" data-activates="mobile-nav" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="cart.html">
+                                <i class="large material-icons">shopping_cart</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="large material-icons">person</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="large material-icons">search</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <!-- Dropdown Trigger -->
+                        <li>
+                            <a href="#">Apparel</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">New Shepard</a>
+                        </li>
+                        <li>
+                            <a href="#giftcard">Gift Card</a>
+                        </li>
+                        <li>
+                            <a href="list.html">List</a>
+                        </li>
+                        <li>
+                            <a href="details.html">Details</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </div>
+<!-- Mobile Navigation -->
+<ul class="side-nav" id="mobile-nav">
+    <li>
+      <a href="#accessories">Accessories <i class="material-icons">chevron_right</i></a>
+    </li>
+    <li>
+      <a href="#">New Shepard <i class="material-icons">chevron_right</i></a>
+    </li>
+    <li>
+      <a href="cart.html">Cart <i class="material-icons">chevron_right</i></a>
+    </li>
+    <li>
+      <a href="list.html">List <i class="material-icons">chevron_right</i></a>
+    </li>
+    <li>
+      <a href="details.html">Details <i class="material-icons">chevron_right</i></a>
+    </li>
+  </ul>
+
+                  
+  <div class="container">
+    <div class="row">
+        <div class="col s12 m6">
+            <img src="assets/img/shopimages/hoodie_b2047829-315a-4c2d-bfab-b678ee9c4b98.png" alt="Product Image" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m6">
+            <h3 class="blue-text lighten-2">white_feathered logo hoodie</h3>
+            <h4>Price: $70.99</h4>
+           <a href="cart.html"><button class="btn waves-effect waves-light" type="button">Add to Cart</button></a>
+        </div>
+        <div class="col m4 blue-text">
+            <img src="assets/img/eco-icon_small.png" alt="">
+                    <p class="card-title">BLUE ORIGIN SHOP</p>
+            <h4 class="blue-text">
+                Size & Quantity
+            </h4>
+
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        Size
+                        <i class="caret material-icons">keyboard_arrow_down</i>
+                    </div>
+                  <div class="collapsible-body">
+                        <form action="#">
+                            <p>
+                            <input type="checkbox" id="test5" />
+                            <label for="test5">XS (6)</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test4" />
+                                <label for="test4">S (7)</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test3" />
+                                <label for="test3">M (7)</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="test2" />
+                                <label for="test2">L (7)</label>
+                            </p>                                
+                        </form>
+                  </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        Quantity
+                        <i class="caret material-icons">keyboard_arrow_down</i>
+                    </div>
+                  <div class="collapsible-body">
+                    <form action="#">
+                        <div>
+                            <div class="number">
+                                <span class="minus btn">-</span>
+                                <input type="text" value="1"/>
+                                <span class="plus btn">+</span>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            <table width="30%">
+                                <tbody>
+                                    <h6 class="black-text">size-chat</h6>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">XS</th>
+                                        <th scope="col">S</th>
+                                        <th scope="col">M</th>
+                                        <th scope="col">L</th>
+                                        <th scope="col">XL</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Body Length
+                                        </th>
+                                        <td>26 1/2</td>
+                                        <td>27 1/2</td>
+                                        <td>28 1/2</td>
+                                        <td>29 1/2</td>
+                                        <td>30 1/2</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Body&nbsp;<br>Width
+                                        </th>
+                                        <td>17 1/2</td>
+                                        <td>19</td>
+                                        <td>20 1/2</td>
+                                        <td>22</td>
+                                        <td>23 1/2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>                          
+                    </form>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--featured products -->
+<section id="featuredProduct" class="section section-gallery scrollspy">
+    <div class="container">
+        <h4 class="left-align">
+            <span>YOU MAY ALSO LIKE </span>
+        </h4>
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/img/shopimages/christmas-sweater_360x.jpg" alt="" class="materialboxed responsive-img">
+                    </div>
+                    <div class="card-content">
+                       <a href="cart.html"> <span class="card-title">christmas-sweater_360x</span>
+                        <p>$42.95
+                        </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/img/shopimages/business-shirt_360x.jpg" alt="" class="materialboxed responsive-img">
+                    </div>
+                    <div class="card-content">
+                       <a href="cart.html"> <span class="card-title">business-shirt_360x</span>
+                        <p>$42.95
+                        </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/img/shopimages/cuff-beanie.png" alt="" class="materialboxed responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <a href="cart.html"><span class="card-title">cuff-beanie</span>
+                        <p>$42.95
+                        </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/img/featured-4.png" alt="" class="materialboxed responsive-img">
+
+                    </div>
+                    <div class="card-content">
+                        <a href="cart.html"><span class="card-title">For the Benefit of Earth Grey Tee</span>
+                        <p>$42.95
+                        </p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                    
+ <!-- Footer -->
+ <footer class="section newGrey darken-2 white-text">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4 left-align quickLinks">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li>
+                        <a href="">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Refunds & Exchanges
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Do not sell my personal information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Accessibility
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 right-align">
+                <img class="materialboxed responsive-img" src="assets/img/feather-footer.png" alt="">
+            </div>
+            <div class="col s12 m4">
+                <p>
+                    For questions or concerns please contact customer service shop@blueorigin.com. Please allow up
+                    to 2 business days for response.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="center borderTop">
+        <p>
+            © 2023, Blue Origin Shop Powered by BRS Studio
+        </p>
+    </div>
+</footer>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
+    });
+    $(document).ready(function() {
+        $('.minus').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+        $('.plus').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
+// Init Scrollspy
+$('.scrollspy').scrollSpy();
+    
+    //inti side nav
+    $('.button-collapse').sideNav();
+		});
+    </script>
+</body>
+</html>
